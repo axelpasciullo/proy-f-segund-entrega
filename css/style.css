@@ -1,0 +1,108 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    display: grid;
+}
+
+header{
+    background-image: url(../assets/hero-img5.png);
+}
+
+
+.bg-rojo{
+    background-color: rgba( 122, 0, 4, .5);
+    background-image: url(../assets/hero-img5.png);
+}
+
+.divA:hover .imgA{
+    transform: scale(1.2);
+    /*transform: rotate(30deg);*/
+}
+.imgA{
+    transition: all .3s;
+}
+
+.divB:hover .imgB{
+transform: scale(1.2);
+}
+
+.imgB{
+    transition: all .3s;
+}
+
+.divC:hover .imgC{
+    transform: scale(1.2);
+}
+
+.imgC{
+    transition: all .3s;
+}
+
+.divImg{
+    float: left;
+}
+
+.main__section--2{
+    overflow: hidden;
+    
+    
+}
+
+/*body{
+    background: linear-gradient(to top, yellow, red); 
+}
+*/
+body{
+    background: linear-gradient(to top, yellow, red); 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav ul li a:hover{
+    background: rgba(107, 102, 100, .8);
+    color: rgb(122, 0, 4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer div img{
+    height: 4em;
+}
